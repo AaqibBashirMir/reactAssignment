@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" style="display: flex;justify-content: center;align-items: center;">
+
+    </div>
+    <script>
+        let div=React.createElement("div",{style:{padding:'20px',margin:'20px',width:'40vw',boxShadow: '0 0 5px gray'}},[
+            React.createElement('h1',{style:{fontSize:'40px'}},"Topics Covered"),
+            React.createElement("p",{style:{fontSize:'20px'}},"The following is the list of all the topics we covered in MDN learning area"),
+            React.createElement("a",{style:{fontSize:'20px'},href:'https://en.wikipedia.org/wiki/HTML'},'Getting started with the web'),
+            React.createElement("p",{style:{fontSize:'20px'},marginLeft:'10px',},"Provides a complete introduction to the beginers"),
+            React.createElement("a",{style:{fontSize:'20px'},href:'https://www.w3schools.com/html/html_intro.asp'},'Html-Structuring the web'),
+            React.createElement("p",{style:{fontSize:'20px'},marginLeft:'10px'},"HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes,"),
+            React.createElement("a",{style:{fontSize:'20px'},href:'https://www.w3schools.com/css/css_intro.asp'},'CSS-Styling the Web'),
+            React.createElement("p",{style:{fontSize:'20px'},marginLeft:'10px'},"CSS is the language we use to style a Web page. What is CSS? CSS stands for Cascading Style Sheets; CSS describes how HTML elements are to be displayed ")
+
+
+
+        ])
+        let create=ReactDOM.createRoot(document.querySelector(".main"));
+         create.render(div)
+
+    </script>
+</body>
+</html>

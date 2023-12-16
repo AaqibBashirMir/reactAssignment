@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main" style="display: flex;justify-content: center;align-items: center;">
+
+    </div>
+    <script>
+        let div = React.createElement("div", { style: { margin: '40px', padding: '20px', width: '40vw' } }, [
+            React.createElement("h1", { style: { fontSize: "50px" } }, "Learn Web Developement"),
+            React.createElement("p", { style: { fontSize: '25px' } }, "Welcome to MDN Learning arae.an open-source, collaborative project that documents web platform technologies, including HTML, CSS, JavaScript, and Web APIs."),
+            React.createElement("p", { style: { fontSize: '25px' } }, "On MDN Web Docs, we encourage our community to start and/or engage in discussions around topics related to the overall project. Discussions are categorized by different topic areas. We ask that you keep each discussion focused on the topic at hand instead of covering multiple topics in one discussion.."),
+            React.createElement("p", { style: { fontSize: '25px' } }, "Discussions are the right place if an issue needs a discussion to agree upon a course of action or define an actionable piece of work. heck out the subject of each discussion category below so that you can start your discussion in the proper place.."),
+        ]);
+        ReactDOM.render(div, document.querySelector('.main'));
+    </script>
+</body>
+
+</html>
